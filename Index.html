@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Registration Form -->
+        <div class="form-box" id="registerBox">
+            <h1>Create Account</h1>
+            <p>Register to get started</p>
+
+            <form id="registerForm">
+                <input type="text" id="regName"
+                    placeholder="Full Name" required>
+
+                <input type="email" id="regEmail"
+                    placeholder="Email Address" required>
+
+                <input type="password" id="regPassword"
+                    placeholder="Create Password" required>
+
+                <input type="password" id="confirmPassword"
+                    placeholder="Confirm Password" required>
+
+                <button type="submit">Register</button>
+            </form>
+
+            <p class="switch">
+                Already have an account?
+                <a href="#" id="showLogin">Login</a>
+            </p>
+        </div>
+
+        <!-- Login Form -->
+        <div class="form-box hidden" id="loginBox">
+            <h1>Welcome Back!</h1>
+            <p>Login to your account</p>
+
+            <form id="loginForm">
+                <input type="email" id="loginEmail"
+                    placeholder="Email Address" required>
+
+                <input type="password" id="loginPassword"
+                    placeholder="Password" required>
+
+                <button ><a href="Ayclothing.html"></a>Login</button>
+            </form>
+
+            <p class="switch">
+                Don't have an account?
+                <a href="#" id="showRegister">Register</a>
+            </p>
+        </div>
+
+        <!-- Dashboard -->
+        <div class="form-box hidden" id="dashboard">
+            <h1>Dashboard</h1>
+            <h2 id="welcomeMessage"></h2>
+            <p>You have successfully logged in!</p>
+            <button id="logoutBtn">Logout</button>
+        </div>
+
+        <p id="message"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+
+    <footer>
+    <p> <span id="year"></span></p>
+</footer>
+</body>
+</html>
